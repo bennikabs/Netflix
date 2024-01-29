@@ -63,3 +63,74 @@ html {
     font-size: 1.5rem;
     border-radius: 0.5rem;
 }
+
+
+.overlay_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 65vh;
+    background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 1) 0,
+            rgba(0, 0, 0, 0.8) 40%,
+            rgba(0, 0, 0, 0.4) 75%,
+            rgba(0, 0, 0, 1) 100%);
+    z-index: 10;
+}
+
+
+.banner__section {
+    height: 550px;
+    min-height: 30rem;
+}
+
+.banner {
+    max-width: 100vw;
+    height: 65vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 5;
+}
+.bannerHero {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 2rem 4rem 2rem;
+    justify-content: center;
+    padding: 7.5rem 0 2rem;
+    z-index: 15;
+    max-width: 60rem;
+
+}
+
+.banner_title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.banner__subtitle {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+
+.restart_btn {
+    width: 100%;
+    padding: 1.3rem 3rem;
+    font-size: 2.4rem;
+    margin: 2.5rem 0 0;
+    text-align: center;
+    align-items: center;
+    vertical-align: text-top;
+    min-height: 3.5rem
+}
+
+.banner_msg {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    margin: 1rem 0 0;
+}
