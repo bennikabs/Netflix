@@ -15,7 +15,7 @@
 
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family:  sans-serif;
     max-width: 100vw;
     overflow-x: hidden;
 }
@@ -23,7 +23,6 @@ body {
 html {
     font-size: 62.7%;
     color: var(--secondary--color);
-
 }
 
 a {
@@ -404,4 +403,33 @@ button {
 
 .accordion.active .accordion__answer {
     display: block;
+}
+
+.footer {
+    padding: 0rem 3rem 4rem;
+    margin: 0 auto;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1;
+}
+
+.footer__link__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.footer__link {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__link.contact--link {
+    display: inline-block;
+    margin: 2rem 0 3rem 0;
 }
