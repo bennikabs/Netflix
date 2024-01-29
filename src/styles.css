@@ -1,6 +1,8 @@
 :root {
     --accent--color: #e50914;
     --secondary--color: white;
+    --accordion-padding: 2rem;
+    --accordion-padding-right: 6rem;
 
 }
 
@@ -22,6 +24,27 @@ html {
     font-size: 62.7%;
     color: var(--secondary--color);
 
+}
+
+a {
+    color: var(--secondary--color);
+}
+
+a:active,
+a:link,
+a:visited {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.4rem;
+}
+
+.section_break {
+    border: 4.2px solid grey;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: var(--secondary--color);
 }
 
 .header {
@@ -49,10 +72,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
-
-
-
 
 .accent--btn {
     background-color: var(--accent--color);
@@ -92,6 +111,7 @@ html {
     object-position: center;
     z-index: 5;
 }
+
 .bannerHero {
     position: absolute;
     display: flex;
@@ -176,13 +196,6 @@ html {
 
 }
 
-.pop_content>button,
-select {
-    text-transform: none;
-}
-
-
-
 .pop_button {
     cursor: pointer;
     color: #448ef4;
@@ -197,4 +210,198 @@ select {
     border: none;
     text-decoration: underline;
     padding: 0;
+}
+
+
+.goodies_about {
+    padding: 5rem 2rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.goodies_about__left {
+    text-align: center;
+}
+
+.EnjoymentTV {
+    text-align: center;
+    margin-top: 12rem;
+    padding-bottom: 0rem;
+}
+
+.EnjoymentTV>h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.EnjoymentTV>h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.goodies_about__left h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+}
+
+.goodies_about__left h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.goodies_about__right {
+    display: grid;
+    place-items: center;
+}
+
+.tv_container {
+    width: 30rem;
+    height: 23.4rem;
+    position: relative;
+}
+
+.tv_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.tv_video {
+    position: absolute;
+    top: 0.8rem;
+    left: 4rem;
+    width: 22.1rem;
+    height: 21rem;
+}
+
+.tv_video1 {
+    position: absolute;
+    top: -3rem;
+    left: 5rem;
+    right: 20rem;
+    width: 19rem;
+    height: 21rem
+}
+
+.stranger_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.stranger_container {
+    position: relative;
+}
+
+.stranger_motion_container {
+    display: grid;
+    grid-template-columns: 4rem 1fr 5rem;
+    width: 60%;
+    height: 8rem;
+    padding: 1rem;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    background: black;
+}
+
+.stranger_motion_container .stranger_img_flyer {
+    height: 90%;
+}
+
+.stranger_motion_container .download_gif {
+    height: 90%;
+}
+
+.stranger_motion_container .stranger_text_container .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.stranger_motion_container .stranger_text_container .downloading {
+    font-size: 1.2rem;
+    color: #0071eb;
+}
+
+.stranger_motion_container .stranger_text_container {
+    padding-left: 2rem;
+}
+
+.cuties_img {
+    width: 100%;
+}
+
+.faq {
+    padding: 5rem 2rem;
+    margin: 0 auto;
+}
+
+.faq_title {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.accordion__list {
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-row-gap: 0.8rem;
+    font-size: 1.9rem;
+}
+
+
+
+.accordion__question {
+    background-color: #303030;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: var(--accordion-padding);
+    padding-right: var(--accordion-padding-right);
+    margin-bottom: 1px;
+    font-size: inherit;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion__question:after {
+    content: "+";
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: var(--accordion-padding-right);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.accordion.active .accordion__question:after {
+    content: "-";
+}
+
+.accordion__answer {
+    background-color: #303030;
+    padding: var(--accordion-padding);
+    display: none;
+}
+
+.accordion.active .accordion__answer {
+    display: block;
 }
