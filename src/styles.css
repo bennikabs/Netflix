@@ -444,13 +444,19 @@ button {
         margin-top: 15rem;
     }
 
+    .EnjoymentTV h2,
+    .goodies_about__left h2 {
+        font-size: 2.2rem;
+    }
+
     .EnjoymentTV h1 {
-        font-size: 4rem;
         margin-bottom: 2rem;
     }
 
-    .EnjoymentTV h2 {
-        font-size: 2.2rem;
+
+    .EnjoymentTV h1,
+    .goodies_about__left h1 {
+        font-size: 4rem;
     }
 
     .tv_container {
@@ -551,5 +557,37 @@ button {
 
     .footer__link__container {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .banner__section {
+        height: 100%
+    }
+
+    .banner {
+        width: 100vw;
+        height: 80vh;
+        object-fit: cover;
+        object-position: center;
+        z-index: 5;
+    }
+
+    .overlay_background {
+        height: 80vh;
+    }
+
+    .EnjoymentTV h1,
+    .goodies_about__left h1 {
+        font-size: 5rem;
+    }
+
+    .EnjoymentTV h2 .goodies_about__left h2 {
+        font-size: 2.5rem;
+    }
+
+    .goodies_about {
+        max-width: 1200px;
     }
 }
