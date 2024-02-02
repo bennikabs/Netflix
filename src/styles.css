@@ -137,12 +137,9 @@ button {
 
 
 .restart_btn {
-    width: 100%;
-    padding: 1.3rem 3rem;
+    padding: 1.2rem 2.4rem;
     font-size: 2.4rem;
     margin: 2.5rem 0 0;
-    text-align: center;
-    align-items: center;
     vertical-align: text-top;
     min-height: 3.5rem
 }
@@ -432,4 +429,80 @@ button {
 .footer__link.contact--link {
     display: inline-block;
     margin: 2rem 0 3rem 0;
+}
+
+@media screen and (min-width: 500px) {
+    .banner {
+        height: 50vh;
+    }
+
+    .overlay_background {
+        height: 50vh;
+    }
+
+    .banner__section,
+    .pops,
+    .rBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bannerHero {
+        margin-top: 15rem;
+    }
+
+    .EnjoymentTV h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .EnjoymentTV h2 {
+        font-size: 2.2rem;
+    }
+
+    .tv_container {
+        width: 50rem;
+        height: 38rem;
+    }
+
+    .tv_video {
+        top: 3.5rem;
+        left: 6.6rem;
+        width: 37rem;
+        height: 29.5rem;
+    }
+
+    .tv_video1 {
+        top: -0.9rem;
+        left: 9.2rem;
+        width: 32rem;
+        height: 28.5rem;
+    }
+
+    .faq_title {
+        font-size: 3.5rem;
+    }
+
+    .footer__link__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__link {
+        font-size: 1.5rem;
+    }
+
+    .pop_box {
+        display: flex;
+        padding: 22px;
+        width: 600px;
+        background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+        margin-top: 0.1rem;
+    }
+
+    .pop_corn {
+        justify-content: left;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
 }
