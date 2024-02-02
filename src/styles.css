@@ -202,7 +202,7 @@ button {
 }
 
 
-.goodies_about {
+.goodies_about, .goodies_about1 {
     padding: 5rem 2rem;
     display: grid;
     grid-row-gap: 1rem;
@@ -541,7 +541,7 @@ button {
     }
 
 
-    .goodies_about {
+    .goodies_about, .goodies_about1 {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
@@ -587,9 +587,13 @@ button {
         font-size: 2.5rem;
     }
 
-    .goodies_about,
+    .goodies_about,.goodies_about1,
     .faq,
     .footer {
         width: 1200px;
+    }
+    .goodies_about1{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
